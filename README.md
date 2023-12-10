@@ -30,11 +30,18 @@ Goal:
 _"The classification goal is to predict if the client will subscribe (yes/no) a term deposit (variable y)."_  
 
 ## Nature of Data
-First we looked at the Nature of the Data.  
+First we looked at the Nature of the Data to get a better understanding of our dataset.  
 **[Nature of Data](Nature_of_Data.ipynb)**  
 
-Important findings were:  
-
 ## Learning process
-We then started with the Machine Learning process:  
+We then started with the Machine Learning process. First, we tried different approaches on a smaller part of the datset.  
+There, we conducted our main research:  
 **[Learning Notebook](main.ipynb)**     
+  
+As one next step, we tried to do **feature selection**.  
+Train every model without columns that where rated unimportant by feature important test in main. Feature selection might not work for our dataset, as the features rated unimportant changed a lot for each model and small parameter changes. Unfortunately, we found that feature selection didn't improve our results.  
+More Details in the **[Feature selection Notebook](main_with_feature_selection.ipynb)**  
+  
+We also tried to run the optimization completely on the **big dataset**.  
+When using the big dataset, we had better results and trained our ***final model***.  
+**[Learning Notebook with full dataset](main_full_dataset.ipynb)**
